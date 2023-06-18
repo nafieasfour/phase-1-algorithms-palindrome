@@ -1,13 +1,17 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+    const reversedStr = word.split('').reverse().join('');
+    return word === reversedStr;
+  
 }
 
 /* 
-  Add your pseudocode here
+  split => reverse = > rejoin = newstring
+  if string === newstring then it is a palindrome.
 */
 
 /*
-  Add written explanation of your solution here
+  the code above split the word into sepearate strings, reverse their order and then rejoin them. if the
+  original string is equal to the reveresed one then the string is a palindrome.
 */
 
 // You can run `node index.js` to view these console logs
